@@ -1,0 +1,22 @@
+<div class="jumbotron">
+  <h1>'Allo, 'Allo!</h1>
+  <p class="lead">
+    <img src="images/yeoman.png" alt="I'm Yeoman"><br>
+    Always a pleasure scaffolding your apps.
+  </p>
+  <p><a class="btn btn-lg btn-success" ng-href="#/">Splendid!<span class="glyphicon glyphicon-ok"></span></a></p>
+</div>
+
+<div>
+    <label>the static input</label><input type="text"/>
+    <br/><br/>
+    
+    <div ng-repeat="person in persons">
+        <label>some dynamic input</label>
+        <input type="text" ng-model="person.name" ng-tab="save(person, $event)" />
+        <br/>
+    </div>
+
+    <br/>
+    <label>the static input again</label><input type="text"/>
+</div>
